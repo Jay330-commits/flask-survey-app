@@ -30,4 +30,4 @@ def submit():
     return "<h3>Thank you for submitting the survey!</h3><p><a href='/'>Submit another</a></p>"
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
