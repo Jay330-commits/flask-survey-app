@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect
 import csv
 from datetime import datetime
 from filelock import FileLock
+import os
 
 app = Flask(__name__)
 
@@ -30,5 +31,5 @@ def submit():
     return "<h3>Thank you for submitting the survey!</h3><p><a href='/'>Submit another</a></p>"
 
 if __name__ == '__main__':
-    app.run()
-
+    port = int(os.environ.get("PORT", 5000))  # use Render's assigned port
+    app.run(host="0.0.0.0", port=port)
