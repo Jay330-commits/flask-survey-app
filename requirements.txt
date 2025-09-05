@@ -1,2 +1,2 @@
 Flask==2.3.3
-filelock==3.12.0t 
+filelock==3.12.0
