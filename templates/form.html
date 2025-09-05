@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Business Survey</title>
+</head>
+<body>
+    <h2>Business Survey</h2>
+    <form action="/submit" method="post">
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male" required> Male<br>
+        <input type="radio" name="gender" value="Female"> Female<br>
+        <input type="radio" name="gender" value="Other"> Other<br><br>
+
+        <label>Services used:</label><br>
+        <input type="checkbox" name="services" value="Delivery"> Delivery<br>
+        <input type="checkbox" name="services" value="Consulting"> Consulting<br>
+        <input type="checkbox" name="services" value="Training"> Training<br><br>
+
+        <label>Feedback:</label><br>
+        <textarea name="feedback" rows="4" cols="40"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
